@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - preConditions:
+      - onFail: WARN
+      - dbms:
+          type: postgresql
+  - include:
+      file: db/migration/telegram-changesets.xml
